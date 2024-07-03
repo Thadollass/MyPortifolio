@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-bg-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-bg-color);
+}
+
+.header {
+    position: fixed; /* Torna o cabeçalho fixo */
+    top: 0; /* Alinha o cabeçalho ao topo da página */
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header .sticky {
+    border-bottom: 1rem solid rgba(0, 0, 0, .2);
+}
+
+/* Estilo para o logotipo */
+img {
+    width: 4vh;
+}
+
+/* Estilo extra para os itens do menu */
+.navbar a {
+    font-style: 1.7rem;
+    color: var(--text-color);
+    text-decoration: none; /* Remover sublinhado padrão dos links */
+    margin-left: 4rem; /* Ajuste conforme necessário para espaçamento entre os itens do menu */
+    transition: .3s;
+    padding: 10px 15px; /* Adicione preenchimento para tornar os itens do menu mais clicáveis */
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+
+}
+
+/* Estilo para o ícone do menu */
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;  /* Ocultar o ícone do menu em telas maiores */
+} 
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home,
+.about {
+    margin-top: calc(2rem + 2%);
+    padding-top: 20px;
+}
+
+.home-img img {
+    margin-right: 50px;
+    width: 49vw;
+    margin-left: -10px;
+    margin-top: 20px;
+}
+
+.home-content{
+    padding: 2rem 9%;
+    padding-right: 0px;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+     
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+
+}
+
+
+.btõ {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: normal;
+    font-weight: 600;
+    transition: .5s ease;
+    text-align: center;
+}
+
+.btõ:hover {
+    box-shadow: none;
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color); 
+}
+ 
+.about-img img {        
+    width: 49vw;
+    margin-left: 80px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+ 
+}
+
+.about,
+.services {
+    margin-top: calc(2rem + 9%);
+    padding-top: 20px;
+}
+.about-content {
+    padding: 2rem 9%;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: -50px;
+}
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}  
+
+.services {
+    padding-top: 80px; /* Adiciona um espaço superior para acomodar o cabeçalho */
+    margin-top: 100px; /* Adicione margem suficiente para evitar que o cabeçalho corte o conteúdo */
+}
+
+.serviços h2 {
+    margin-bottom: 5rem;
+    margin-top: 40px;
+
+}
+.serviços-contidos {
+    padding: 20rem 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 0px;
+}
+
+.serviços-contidos .Caixa-Serviço {
+    width: 40rem; /* Defina uma largura fixa para as caixas de serviço */
+    height: 80%; /* Define uma altura fixa para todas as caixas de serviço */
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.serviços-contidos .Caixa-Serviço:hover  {
+    border-color: var(--main-color);
+    transform: scale(1.02); 
+}
+.Caixa-Serviço i { 
+    font-size: 7rem; 
+    color: var(--main-color) ;
+}
+
+.Caixa-Serviço h3 {
+    font-size: 2.6rem;
+}
+
+.Caixa-Serviço p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+} 
+
+ .portifilio {
+    background: var(--second-bg-color);
+    padding: 5rem 9%;
+
+ }
+
+ .portifilio h2 {
+    margin-bottom: 4rem;
+ }
+
+
+ .contendo-portifilio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center; /* Centralize as colunas horizontalmente */
+    align-items: center; /* Centralize as colunas verticalmente */
+    gap: 2,5rem;
+    margin: 2rem 9%;
+ }
+
+ .contendo-portifilio .caixa-portifilio {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+ }
+
+ .caixa-portifilio {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    width: 20vw; /* Defina a largura das caixas de acordo com a largura das imagens */
+    height: auto; /* Permita que a altura das caixas seja ajustada dinamicamente */
+    margin-bottom: 2rem; /* Adicione um espaço entre as caixas */
+}
+ .caixa-portifilio img {
+    width: 100%;
+    height: auto; /* Garanta que a altura da imagem seja ajustada automaticamente */
+    transition: .5s ease;
+}
+ 
+ .caixa-portifilio img:hover {
+    transform: scale(1.1);
+ }
+   
+ .caixa-portifilio .portifilio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0,0,0, .1), var(--main-color));
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem; 
+    transform: translateY(100%);
+    transition: .5s ease;
+ }
+
+ .caixa-portifilio:hover .portifilio-layer {
+    transform: translateY(0%);
+ }
+ 
+ .portifilio {
+    padding-top: 80px; /* Adiciona um espaço superior para acomodar o cabeçalho */
+    margin-top: 100px; /* Adicione margem suficiente para evitar que o cabeçalho corte o conteúdo */
+}
+
+ .portifilio-layer h4 {
+    font-size: 3rem;
+
+ }
+
+ .portifilio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+ }
+  
+.portifilio-layer .a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: white; /* Fundo circular branco */
+    border-radius: 50%; /* Para criar o formato circular */
+    text-decoration: none; /* Remova o sublinhado padrão */
+}
+
+.portifilio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+    background-color: white; /* Cor de fundo circular branco */
+    border-radius: 50%; /* Garanta que o ícone tenha formato circular */
+    padding: 1rem; /* Adicione preenchimento para garantir que o círculo seja visível */
+}
+
+
+.contact h2 {
+    margin-bottom: 3rem;
+
+}
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+.contact form .caixa-input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .caixa-input input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .caixa-input input{
+    width: 49%;
+}
+
+.contant form textarea {
+    resize: none;
+}
+ 
+.contact form .btõ {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.contact {
+    padding-top: 70px; /* Adiciona um espaço superior para acomodar o cabeçalho */
+    margin-top: 100px; /* Adicione margem suficiente para evitar que o cabeçalho corte o conteúdo */
+}
+
+/* butao de whatsapp */
+.btõ-whatsapp {
+    padding: 2rem 9%;
+    position: fixed;
+    bottom: 20px; /* Define a distância do botão até a borda inferior */
+    right: 20px; /* Define a distância do botão até a borda direita */
+    z-index: 9999; /* Garante que o botão fique acima de outros elementos */
+}
+
+.btõ-whatsapp a {
+    display: block;
+    width: 60px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    background-color: #0ef; /* Cor de fundo do botão */
+    color: #fff;
+    border-radius: 50%; /* Para tornar o botão circular */
+    text-align: center;
+    font-size: 40px; /* Tamanho do ícone */
+    line-height: 65px; /* Centraliza verticalmente o ícone */
+    margin-left: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Adiciona uma transição de 0.3 segundos para a cor de fundo e transformação */
+}
+
+.btõ-whatsapp a:hover {
+    background-color: #323946; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+}
+
+
+/* Ajusta o tamanho do botão para dispositivos menores */
+@media (max-width: 768px) {
+    .btõ-whatsapp {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+.roda-pe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.texto-roda-pe p {
+    font-size: 1.6rem;
+}
+
+.roda-pe-Topicon a {
+    margin-right: 150px;
+    display:  inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+.roda-pe-Topicon a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.roda-pe-Topicon a i {
+    
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .header{
+        padding: 2rem 3%;
+    }
+    section {
+        padding: 10rem 3% 2rem;
+    }
+    .roda-pe {
+        padding: 2rem 3%;
+    }
+}
+ 
+
+@media (max-width: 768px) {
+
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%; 
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .navbar .active {
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    } 
+}  
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
