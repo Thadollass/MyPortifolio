@@ -89,15 +89,13 @@ img {
 }
 
 .home-img img {
-    margin-right: 50px;
-    width: 49vw;
-    margin-left: -10px;
-    margin-top: 20px;
+width: 90vw;
 }
 
 .home-content{
     padding: 2rem 9%;
     padding-right: 0px;
+    padding-right: 9%;
 }
 
 .home-content h3 {
@@ -175,8 +173,7 @@ span {
 }
  
 .about-img img {        
-    width: 49vw;
-    margin-left: 80px;
+    width: 90vw;
 }
 
 .heading {
@@ -197,9 +194,8 @@ span {
 }
 .about-content {
     padding: 2rem 9%;
-    padding-left: 0px;
     margin-right: 0px;
-    margin-left: -50px;
+
 }
 .about-content h3 {
     font-size: 2.6rem;
@@ -293,7 +289,7 @@ span {
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
-    width: 20vw; /* Defina a largura das caixas de acordo com a largura das imagens */
+/* Defina a largura das caixas de acordo com a largura das imagens */
     height: auto; /* Permita que a altura das caixas seja ajustada dinamicamente */
     margin-bottom: 2rem; /* Adicione um espaço entre as caixas */
 }
@@ -439,6 +435,7 @@ span {
     transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
 }
 
+
 /* Ajusta o tamanho do botão para dispositivos menores */
 @media (max-width: 768px) {
     .btõ-whatsapp {
@@ -500,10 +497,12 @@ body, html {
     .header {
         padding: 2rem 3%;
     }
+
+
     section {
         padding: 10rem 3% 2rem;
     }
-    .roda-pe {
+    .roda-pe { 
         padding: 2rem 3%;
     }
 }
@@ -534,17 +533,86 @@ body, html {
         color: var(--text-color); /* Assegura que a cor do texto seja legível */
         text-decoration: none; /* Remove a sublinha dos links */
     }
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about-img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+        .serviços h2{
+            margin-bottom: 3rem;
+        }
+    .portifilio {
+        padding-bottom: 7rem;
+    }
 }
 
 @media (max-width: 450px) {
     html {
         font-size: 50%;
     }
+    .contact form .caixa-input input {
+        width: 100%;
+    }
+    
     .header, .section, .roda-pe {
         padding: 1rem 2%; /* Ajusta o padding para telas muito pequenas */
     }
     .navbar a {
         font-size: 1.8rem; /* Ajusta o tamanho da fonte para ser mais legível em telas pequenas */
+    }
+    .home-img img {
+        width: 90vw;
+        margin-top: 4rem;
+    }
+    .about-img img {
+        width: 90vw;
+    }
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about-img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+        .serviços h2{
+            margin-bottom: 3rem;
+        }
+    .portifilio h2{
+        margin-bottom: 3rem;
+    }
+    .portifilio{
+        padding-bottom: 7rem;
+    }
+    .contendo-portifilio{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-conten {
+        padding-left: 95px;
+        margin-left: 7px;
+    }
+
+
+}
+
+@media (max-width: 617px) {
+        
+    .contendo-portifilio {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -598,9 +666,3 @@ img {
     object-fit: contain; /* Mantém a proporção da imagem dentro do contêiner */
 }
 
-
-
-
-        font-size: 50%;
-    }
-}
